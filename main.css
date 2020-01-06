@@ -72,7 +72,6 @@ section h1 {
 }
 
 #home {
-/*    background: linear-gradient(225deg, rgba(255,51,255,1) 0%, rgba(255,153,51,1) 100%);*/
     background-color: #3399FF;
 }
 
@@ -97,4 +96,17 @@ span {
 span.fade {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Darkmode */
+
+@media (prefers-color-scheme: dark) {
+    header {
+        background-color: #282c34;
+        color: white;
+    }
+
+    nav a {
+        color: white;
+    }
 }
