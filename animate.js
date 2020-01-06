@@ -1,4 +1,4 @@
-const text = document.querySelector('.bounce-in');
+const text = document.querySelector('.fade-in');
 const stringText = text.textContent;
 const splitText = stringText.split('');
 
@@ -9,7 +9,7 @@ for (let i = 0; i < splitText.length; i++) {
 }
 
 let char = 0;
-let timer = setInterval(onTick, 50);
+let timer = setInterval(onTick, 10);
 
 function onTick() {
     const span = text.querySelectorAll('span')[char];
